@@ -22,7 +22,7 @@ React.useEffect(()=> {
 }, [mbti])
 
 
-console.log(resultData)
+// console.log(resultData)
 
     return (
         <Wrapper>
@@ -35,7 +35,7 @@ console.log(resultData)
         </LogoImage>
         <Bposition>
         <Button style={{fontFamily: "EF_Diary"}} onClick={()=>navigate("/")}>테스트 다시해보기</Button>
-        <KakaoShareButton />
+        <KakaoShareButton data={ResultData}/>
         </Bposition>
         
         </Contents>
