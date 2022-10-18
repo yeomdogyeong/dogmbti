@@ -29,7 +29,7 @@ console.log(resultData)
     <Contents>
     <Title>결과보기</Title>
     <LogoImage>
-        <img src={resultData.image} className="rounded-circle" width={350} height={350}/>
+        <img alt="dogpicture"src={resultData.image} className="rounded-circle" width={350} height={350}/>
         <Ddesc>{resultData.desc}</Ddesc>
         </LogoImage>
         
