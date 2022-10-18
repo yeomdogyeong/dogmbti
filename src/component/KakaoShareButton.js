@@ -22,13 +22,12 @@ const KakaoShareButton = ({data}) => {
   Kakao.Link.sendDefault({
     objectType: 'feed',
     content: {
-      title: '나와 어울리는 강아지',
-      description: '최고의 친구를 찾아보자',
-      imageUrl:
-        url+data.image,
+      title: '판별 결과 강쥐는🐶',
+      description: '최고의 친구를 찾아보자🐶🐕🐩🦮🐕‍🦺',
+      imageUrl: url + data.img,
       link: {
-        mobileWebUrl: resultUrl,
-        webUrl: resultUrl,
+        mobileWebUrl: url,
+        webUrl: url,
       },
     },
     

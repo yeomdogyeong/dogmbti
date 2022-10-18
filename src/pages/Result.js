@@ -26,16 +26,16 @@ React.useEffect(()=> {
 
     return (
         <Wrapper>
-    <Header>나와 맞는 강아지는 바로!!</Header>
+    <Header>🐕짝궁강쥐 판별기🐩</Header>
     <Contents>
-    <Desc>나와 최고의 케미를 자랑하는 강아지는 `{resultData.name}`입니다.</Desc>
+    <Desc>나와 최고의 케미를 자랑하는 강아지는 {resultData.best}형 강아지 `{resultData.name}`입니다.</Desc>
     <LogoImage>
         <img alt="dogpicture"src={resultData.image} className="rounded-circle" width={350} height={350} />
         
         </LogoImage>
         <Bposition>
         <Button style={{fontFamily: "EF_Diary"}} onClick={()=>navigate("/")}>테스트 다시해보기</Button>
-        <KakaoShareButton data={ResultData}/>
+        <KakaoShareButton data={resultData}/>
         </Bposition>
         
         </Contents>
