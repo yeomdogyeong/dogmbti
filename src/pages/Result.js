@@ -88,5 +88,5 @@ font-family: "EF_Diary";
 margin-left : 40px;
 border: 5px solid gray;
 border-style: none,none,none, dotted;
-border-radius: 2    0px;
+border-radius: 20px;
 `
