@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Button from 'react-bootstrap/Button';
 import {ResultData} from '../assets/data/resultdata';
 import {useSearchParams, useNavigate} from 'react-router-dom';
+import KakaoShareButton from '../component/KakaoShareButton';
 
 
 
@@ -27,14 +28,16 @@ console.log(resultData)
         <Wrapper>
     <Header>나와 맞는 강아지는 바로!!</Header>
     <Contents>
-    <Title>결과보기</Title>
+    <Desc>나와 최고의 케미를 자랑하는 강아지는 `{resultData.name}`입니다.</Desc>
     <LogoImage>
-        <img alt="dogpicture"src={resultData.image} className="rounded-circle" width={350} height={350}/>
-        <Ddesc>{resultData.desc}</Ddesc>
-        </LogoImage>
+        <img alt="dogpicture"src={resultData.image} className="rounded-circle" width={350} height={350} />
         
-        <Desc>나와 최고의 케미를 자랑하는 강아지는 `{resultData.name}`입니다.</Desc>
+        </LogoImage>
+        <Bposition>
         <Button style={{fontFamily: "EF_Diary"}} onClick={()=>navigate("/")}>테스트 다시해보기</Button>
+        <KakaoShareButton />
+        </Bposition>
+        
         </Contents>
     </Wrapper>
     )
@@ -56,15 +59,11 @@ const Header = styled.div `
     font-family: "EF_Diary";
 `
 
-const Title = styled.div`
- font-size: 30pt;
- margin-top: 40px;
-font-family: "EF_Diary";
-`
+
 
 const LogoImage = styled.div `
-margin-top: 10px;
-margin-left: 10px;
+margin-top: 50px;
+
 display: flex;
 `
 
@@ -81,12 +80,10 @@ justify-content: center;
     flex-direction: column;
 `
 
-const Ddesc = styled.div `
-font-size: 20pt;
-margin-top: 30px;
-font-family: "EF_Diary";
-margin-left : 40px;
-border: 5px solid gray;
-border-style: none,none,none, dotted;
-border-radius: 20px;
+
+
+const Bposition = styled.div `
+margin-top : 50px;
+display: flex;
+flex-direction : row;
 `
