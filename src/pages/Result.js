@@ -35,7 +35,7 @@ React.useEffect(()=> {
         </LogoImage>
         <Bposition>
         <Button style={{fontFamily: "EF_Diary"}} onClick={()=>navigate("/")}>테스트 다시해보기</Button>
-        <KakaoShareButton data={resultData}/>
+        <KakaoShareButton />
         </Bposition>
         
         </Contents>
