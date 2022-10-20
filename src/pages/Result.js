@@ -28,7 +28,7 @@ React.useEffect(()=> {
         <Wrapper>
     <Header>🐕짝궁강쥐 판별기🐩</Header>
     <Contents>
-    <Desc>나와 최고의 케미를 자랑하는 강아지는 {resultData.best}형 강아지 `{resultData.name}`입니다.</Desc>
+    <Desc>나와 최고의 케미를 자랑하는 강아지는 {resultData.best}형 강아지 <AS>`{resultData.name}`</AS>입니다.</Desc>
     <LogoImage>
         <img alt="dogpicture"src={resultData.image} className="rounded-circle" width={350} height={350} />
         
@@ -52,7 +52,7 @@ width: 100%;
 `
 
 const Header = styled.div `
-    font-size: 40pt;
+    font-size: 30pt;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -71,6 +71,8 @@ const Desc = styled.div `
 font-size: 20pt;
 margin-top: 30px;
 font-family: "EF_Diary";
+text-align: center;
+
 `
 
 const Contents = styled.div`
@@ -86,4 +88,9 @@ const Bposition = styled.div `
 margin-top : 50px;
 display: flex;
 flex-direction : row;
+`
+
+const AS = styled.div`
+color : tomato;
+white-space:nowrap;
 `

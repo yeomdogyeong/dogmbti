@@ -94,7 +94,7 @@ width: 100%;
 `
 
 const Title = styled.div`
- font-size: 30pt;
+ font-size: 20pt;
  margin-top: 40px;
  text-align: center;
 font-family: "EF_Diary";
@@ -106,4 +106,7 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 font-family: "EF_Diary";
+position: fixed; 
+  bottom: 0; 
+  width: 100%; 
 `
